@@ -155,16 +155,6 @@
      target="_blank">
     現在地付近の病院を地図で開く
   </a>
-
-  <script>
-    // PWA用：service worker 登録
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./service-worker.js')
-          .catch(err => console.log('SW registration failed', err));
-      });
-    }
-  </script>
-
+  
 </body>
 </html>
