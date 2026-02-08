@@ -1,4 +1,4 @@
-const CACHE_NAME = 'emergency-app-v2';
+const CACHE_NAME = 'emergency-app-v3';
 const URLS_TO_CACHE = [
   './',
   './index.html',
@@ -32,3 +32,4 @@ self.addEventListener('fetch', event => {
     caches.match(event.request).then(response => response || fetch(event.request))
   );
 });
+
